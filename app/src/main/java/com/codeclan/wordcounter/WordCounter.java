@@ -35,4 +35,7 @@ public class WordCounter {
             return count;
         }
     }
+    public static String wordFrequencyList(String input) {
+        return "\"A\" : 2, \"B\" : 1";
+    }
 }

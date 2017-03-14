@@ -41,5 +41,9 @@ public class WordCounterTest {
         assertEquals(0L, WordCounter.wordCount(", ,"));
     }
 
+    @Test
+    public void canCountWordFrequencies() throws Exception {
+        assertEquals("\"A\" : 2, \"B\" : 1", WordCounter.wordFrequencyList("A B A"));
+    }
 
 }
