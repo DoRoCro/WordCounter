@@ -28,4 +28,18 @@ public class WordCounterTest {
     public void canReturnACount() throws Exception {
         assertEquals(2L, WordCounter.wordCount(testText1));
     }
+
+    @Test
+    public void canReturnZero() throws Exception {
+        assertEquals(0L, WordCounter.wordCount(testText3));
+        assertEquals(0L, WordCounter.wordCount(testText4));
+    }
+
+    @Test
+    public void worksWithSentencesWithPuctuation() throws Exception {
+        assertEquals(36L,WordCounter.wordCount(testText2));
+        assertEquals(0L, WordCounter.wordCount(", ,"));
+    }
+
+
 }
