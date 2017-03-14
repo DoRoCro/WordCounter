@@ -20,6 +20,7 @@ public class WordsCountedActivity extends AppCompatActivity {
         String input = extras.getString("input");       // get object via key
 
         inputText = (TextView)findViewById(R.id.input_text);
+        inputText.setText(input);
         wordsCountedText = (TextView)findViewById(R.id.words_counted);
 
         long wordcount = WordCounter.wordCount(input);
