@@ -25,7 +25,7 @@ public class WordCounterTest {
     }
 
     @Test
-    public void canSplitTextIntoWords() throws Exception {
-        wordcounter = new WordCounter();
+    public void canReturnACount() throws Exception {
+        assertEquals(2, WordCounter.wordCount(testText1));
     }
 }
